@@ -1,38 +1,69 @@
-.App {
+.months {
+  display: flex;
+}
+
+.months button {
+  background-color: transparent;
+  border: none;
+  padding-top: 5px;
+  margin: 0 10px 0 10px;
+}
+
+.calendarContainer {
+  width: 430px;
+  height: 460px;
+  margin: 10px auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+}
+.calendarHeader {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calendarHeader > button {
+  background-color: #ececec;
+  border: none;
+  padding: 5px 20px 5px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 7px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.calendarHeader div {
+  width: 100%;
+  margin: 7px auto;
+}
+.calendarHeader div span {
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calendarHeader div button {
+  padding: 5px 15px 0 15px;
+  border-radius: 20%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.calTable {
+  width: 95%;
+  max-height: 95%;
+  margin: 5px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calTable th {
+  color: #cccccc;
+  height: 40px;
+  width: 40px;
+}
+.calTable td {
+  height: 50px;
+  text-align: center;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.calTable td.prev {
+  color: #cccccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calTable td.active {
+  background-color: #2189d8;
+  border-radius: 20%;
+  color: #eeeeee;
 }
