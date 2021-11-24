@@ -2,7 +2,7 @@
 
 <div align="center">
   
-## I used for this project
+## I used  these techs for this project
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" /></a>
 
 
